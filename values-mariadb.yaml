@@ -1,0 +1,5 @@
+auth:
+  database: mariadb_database
+  password: mydbpassword
+  username: mariadb_user
+  rootPassword: myrootpassword
