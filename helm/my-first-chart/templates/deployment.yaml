@@ -1,5 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
+  {{ "This is an example deployment from SUJITH" }}
+  {{ .Values.customBlock.from }}
+  {{ .Values.customBlock.purpose }}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:
