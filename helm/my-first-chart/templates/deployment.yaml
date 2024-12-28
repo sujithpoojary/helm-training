@@ -1,8 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
   {{ "This is an example deployment from SUJITH" }}
+  {{ "getting values from Values.yaml" }}
   {{ .Values.customBlock.from }}
   {{ .Values.customBlock.purpose }}
+  {{ "Getting values from Chart.yaml" }}
+
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:
