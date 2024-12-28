@@ -2,6 +2,9 @@ apiVersion: v2
 name: my-first-chart
 description: A Helm chart for Kubernetes
 
+maintainers:
+  - name: "Sujith"
+    email: "sujithPoojary@gmail.com"
 
 # A chart can be either an 'application' or a 'library' chart.
 #

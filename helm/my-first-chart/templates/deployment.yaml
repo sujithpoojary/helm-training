@@ -5,6 +5,7 @@ kind: Deployment
   {{ .Values.customBlock.from }}
   {{ .Values.customBlock.purpose }}
   {{ "Getting values from Chart.yaml" }}
+  {{ .Chart.Maintainers }}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
