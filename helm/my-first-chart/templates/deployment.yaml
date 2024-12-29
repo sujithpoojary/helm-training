@@ -6,6 +6,10 @@ kind: Deployment
   {{ .Values.customBlock.purpose }}
   {{ "Getting values from Chart.yaml" }}
   {{ .Chart.Maintainers }}
+  {{ "Adding few more custom lines for using Pipe function" }}, {{ "here" }}
+  {{ .Values.customBlock.email }}
+  {{ .Values.customBlock.email | default "This is a default block that gets executes if email field is empty" }}
+  {{ .Values.customBlock.email | default "this is the default block" | upper | quote }}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
